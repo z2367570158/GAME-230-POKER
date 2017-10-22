@@ -339,7 +339,7 @@ void checkHand()
 	}
 
 	
-	if (inHand[0].suit == inHand[1].suit || inHand[1].suit == inHand[2].suit || inHand[2].suit == inHand[3].suit || inHand[3].suit == inHand[4].suit)
+	if (inHand[0].suit == inHand[1].suit && inHand[1].suit == inHand[2].suit && inHand[2].suit == inHand[3].suit && inHand[3].suit == inHand[4].suit)
 	{
 		if (rank < 4)
 			rank = 5;
@@ -361,7 +361,7 @@ void checkHand()
 
 	if (rank ==0)
 	{
-		cout << "sorry, no poker hand score " << currentMoney << endl;
+		cout << "sorry, no poker hand score£¬now you have " << currentMoney << endl;
 	}
 	else if (rank == 1)
 	{
