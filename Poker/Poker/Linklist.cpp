@@ -30,6 +30,7 @@ void printList(Linklist* list)
 	}
 	cout << getCardInfo(node->card) << endl;
 }
+
 string getCardInfo(Card card)
 {
 	string info = "";
@@ -138,4 +139,20 @@ void deleteLinklist(Linklist* list)
 		delete temp;
 	}
 	delete list;
+}
+
+int findCard(Linklist* list,Card card)
+{
+	Node* node = list->head;
+	int index = 0;
+	while (node != nullptr)
+	{
+		if(card.value == node->card.value&& card.suit == node->card.suit)
+		{
+			return index;
+		}
+		node = node->next;
+		index++;
+	}
+	return -1;
 }

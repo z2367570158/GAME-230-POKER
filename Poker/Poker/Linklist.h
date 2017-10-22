@@ -47,7 +47,7 @@ string getCardInfo(Card card);
 Card getItem(Linklist* list, int index);
 void removeItem(Linklist* list, int index);
 void deleteLinklist(Linklist* list);
-
+int findCard(Linklist* list, Card card);
 
 #endif 
 
