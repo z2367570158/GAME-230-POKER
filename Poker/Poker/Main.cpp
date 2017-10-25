@@ -309,7 +309,7 @@ void checkHand()
 	case 1:
 		for (int i = 0; i < 4; i++)
 		{
-			if (inHand[i].value == 11 && inHand[i + 1].value == 11)
+			if (inHand[i].value == 11 && inHand[i + 1].value ==11 || inHand[i].value == 12 && inHand[i + 1].value == 12|| inHand[i].value == 13 && inHand[i + 1].value == 13)
 				rank = 1;//jacks or better
 			else
 				rank = 0;//high card
